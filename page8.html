@@ -2,10 +2,8 @@
 <html>
 
 <head>
-    <!-- Site made with Mobirise Website Builder v5.8.14, https://mobirise.com -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v5.8.14, mobirise.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
     <meta name="description" content="">
@@ -123,7 +121,13 @@
                     <div class="text-wrapper">
                         <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Authoritative Server
                                 Model</strong></h3>
-                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <p class="mbr-text mbr-fonts-style display-7">This project uses Colyseus to implement an
+                            authoritative server model. This is where the server is incharge of keeping track of the
+                            game state while the client job is only to show the end user state that the server is
+                            currently communicating. A strategy like this is very useful to prevent cheating and is
+                            commonplace in the industry. Due to the nature of the game and its turn based I saw no need
+                            to implement a client-side prediction model, since the lag between switching states would
+                            not cause much issues for the end user nor the game flow.</p>
                     </div>
                 </div>
             </div>
@@ -152,7 +156,14 @@
                     <div class="text-wrapper">
                         <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Command Pattern</strong>
                         </h3>
-                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <p class="mbr-text mbr-fonts-style display-7">After reading <a
+                                href="https://gameprogrammingpatterns.com/" class="text-primary">Game Programming
+                                Patterns</a> by Robert Nystrom I learned about the “Command Pattern”. In this pattern
+                            one delegates tasks to be dealt with later, this is done so to decouple the actual algorithm
+                            with the code that surrounds it. This makes executing the messages received from the clients
+                            a lot easier for the server to handle. Rather than having a verbose file that contains all
+                            the functions of what needs to be triggered I can delegate them to their own object that can
+                            execute them.</p>
                     </div>
                 </div>
             </div>
@@ -167,7 +178,10 @@
 
                     <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Project Description</strong>
                     </h4>
-                    <p class="mbr-text mbr-fonts-style display-7"></p>
+                    <p class="mbr-text mbr-fonts-style display-7">This game is a poker inspired card game. Player’s must
+                        battle their cards using a rock-paper-scissors type system. Battles will determine the draft
+                        order, the draft is when players choose their poker hand. After 5 rounds of battles and drafts
+                        the player with the highest poker hand wins.</p>
                 </div>
             </div>
         </div>
@@ -182,7 +196,13 @@
                             Tools Used</strong></h4>
                     <div class="mbr-text mbr-fonts-style display-7">
                         <ul>
-                            <li><br></li>
+                            <li><strong>Frameworks:</strong> Colyseus, Vite, Node.js, Phaser
+                            </li>
+                            <li><strong>Programming Language:</strong> Typescript
+                            </li>
+                            <li><strong>IDE:</strong> Visual Studio Code
+                            </li>
+                            <li><strong>Source Control:</strong> Github</li>
                         </ul>
                     </div>
                 </div>
@@ -197,7 +217,11 @@
                 <div class="col-md-12 col-lg-10">
 
                     <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>What I learned</strong></h4>
-                    <p class="mbr-text mbr-fonts-style display-7"></p>
+                    <p class="mbr-text mbr-fonts-style display-7">Throughout this project I gained a deeper
+                        understanding of an authoritative server model. Understanding how internet protocols work and
+                        using them to their advantage was very important to apply that knowledge within this project.
+                        Once I figured and created the server and client connection the rest of the game became a lot
+                        easier.</p>
                 </div>
             </div>
         </div>
@@ -216,7 +240,7 @@
             </div>
         </div>
     </section>
-
+   
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/parallax/jarallax.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
